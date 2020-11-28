@@ -204,7 +204,7 @@ nav{
 .backalive{
     width: 100vw;
     height: 100vh;
-    background-image: url(giphy.gif);
+    background-color: black;
     display: flex;
     position: fixed;
     display: active;
