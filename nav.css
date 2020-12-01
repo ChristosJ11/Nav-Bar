@@ -1,0 +1,337 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+h1{
+    font-family: 'Castoro', serif;
+   color: white;
+    opacity: 1;
+    
+}
+h2{
+    font-family: 'Castoro', serif;
+    color: black;
+    font-size: medium;
+      
+    
+}
+h3{
+    font-family: 'Poiret One', cursive;
+    color: black;
+    font-size: 100px;
+    
+}
+p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20vw;
+ line-height: 50vw;
+   -webkit-text-fill-color:rgba(6, 56, 118, 0); /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color:  white;
+   display: none;
+  }
+  
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    opacity: .95;
+    
+    
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+     width: 40%;
+     
+}
+
+.links a{
+    font-family: 'Castoro', serif;
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+   
+    
+    
+    
+}
+
+.links li{
+   list-style: none;
+}
+
+.stack{
+    display: none;
+    
+}
+.stack div{
+    width: 29px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    
+    
+}
+.pnew1{
+    display: none;
+}
+@media screen and (max-width: 750px){
+    
+    body{
+        overflow-x: hidden;
+    }
+    .links{
+        position: absolute;
+        
+        
+        
+        display: flex;
+        flex-direction: column;
+       
+        
+        
+    }
+    .links li{
+       
+        writing-mode: vertical-rl; 
+        text-orientation: upright;
+        font-size: large ;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        
+       
+    }
+    .up1{
+        position: absolute;
+        left: -20vw;
+        height: 50vh;
+        width: 15vw;
+        background-color: black;
+        top: 45vh;
+        display: flex;
+        transform: translateY(170%);
+        transition: transform 0.5s ease-in;
+        border-radius: 10px;
+        background-image: linear-gradient(white,rgb(6,57,118));
+        
+       
+        
+       
+       
+    }
+    .up2{
+        position: absolute;
+        left: -4vw;
+        height: 50vh;
+        width: 15vw;
+        background-color:  black;
+        top: 45vh;
+        display: flex;
+        transform: translateY(-200%);
+        transition: transform 0.5s ease-in;
+        border-radius: 10px;
+       
+       
+    }
+    .up3{
+        position: absolute;
+        left: 12vw;
+        height: 50vh;
+        width: 15vw;
+        background-color: black;
+        top: 45vh;
+        display: flex;
+        transform: translateY(170%);
+        transition: transform 0.5s ease-in;
+        border-radius: 10px;
+        
+        
+       
+    }
+    .up4{
+        position: absolute;
+        left: 28vw;
+        height: 50vh;
+        width: 15vw;
+        background-color:  black;
+        top: 45vh;
+        display: flex;
+        transform: translateY(-200%);
+        transition: transform 0.5s ease-in;
+        border-radius: 10px;
+ 
+    }
+    .up5{
+        position: absolute;
+        left: 44vw;
+        height: 50vh;
+        width: 15vw;
+        background-color:  black;
+        top: 45vh;
+        display: flex;
+        transform: translateY(170%);
+        transition: transform 0.5s ease-in;
+        border-radius: 10px;
+        
+       
+       
+    }
+
+    .stack{
+        display: block;
+        cursor: pointer;
+        z-index: 2;
+        transition: transform 0.5s ease-in;
+    }
+    .ff{
+        margin: 0px;
+    }
+    .links-active{
+        transform: translateX(0%);
+    }
+    .links-activee{
+        transform: translateX(0%);
+    }
+    .line2{
+        transition:transform 0.5s ease-out;
+    }
+    .line1{
+        transition:transform 0.5s ease-out;
+        transform-origin: 10% 10%
+    }
+    .line3{
+        transition:transform 0.5s ease-out;
+        transform-origin: 10% 90%;
+    }
+   
+    .line1slide{
+      transform: rotate(45deg);
+      transform-origin: 10% 10%;
+    }
+    .line3slide{
+        transform: rotate(-45deg);
+        transform-origin: 10% 90%;
+    }
+    .line1slide1{
+        transform: rotate(-45deg);
+        transform-origin: 10% 90%;
+      }
+      .line3slide1{
+          transform: rotate(45deg);
+          transform-origin: 10% 10%;
+      }
+   
+    
+    .hide{
+        visibility: hidden;
+        transition:transform 0.5s ease-out;
+    }
+/* for the background of nav */
+.back{
+    width: 100vw;
+    height: 100vh;
+   
+    position: fixed;
+    opacity: 0;
+    padding: 0px;
+    top: 0px;
+    display: none;
+    transition: opacity 5s ease-out;
+   
+    
+}
+.backalive{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgb(6,57,118),rgba(255, 255, 255, 0.171));
+    position: fixed;
+    display: flex;
+    opacity: 1;
+   
+  transition: opacity 0.5s ease-in;
+    
+}
+.pnew {
+    font-family:  "Times New Roman", Times, serif;
+    font-size: 20vw;
+ line-height: 50vw;
+   -webkit-text-fill-color:rgba(6, 56, 118, 0); /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color:  rgba(255, 255, 255, 0.959);
+  display: flex;
+  position: absolute;
+  top: 2vh;
+  }
+  .pnew1 {
+    font-family:  "Times New Roman", Times, serif;
+    font-size: 20vw;
+ line-height: 10vw;
+   -webkit-text-fill-color:rgba(6, 56, 118, 0); /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color:  rgba(255, 255, 255, 0.959);
+   position: absolute;
+   top: 30vh;
+   right: 5px;
+   -moz-transform: scale(-1, 1) ;
+-webkit-transform: scale(-1, 1) ;
+-o-transform: scale(-1, 1);
+-ms-transform: scale(-1, 1);
+transform: scale(-1, 1);
+display: block;
+
+  }
+.griditem1{
+    
+    height: 35vh;
+    width: 12vw;
+    border-width: 1px;
+    border-color: white;
+    position: absolute;
+    border-style: solid;
+   left: 50vw;
+   top: 8vh;
+    
+}
+.griditem2{
+    
+    height: 5vh;
+    width: 100vw;
+    border-width: 1px;
+    border-color: white;
+    display: block;
+    border-style: solid;
+    
+    
+}
+span{
+    opacity: 0;
+    transition:  all 0.5s ease;
+    transform: translateY(70px);
+    display: inline-block;
+}
+
+.fade{
+opacity: 1;
+transform: translateY(10px);
+}
+.fade1{
+    opacity: 1;
+    transform: translateY(10px );
+    }
+}
+/* media screen ends*/
+.fill{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
